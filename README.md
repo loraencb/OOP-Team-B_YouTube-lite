@@ -144,3 +144,91 @@ youtube-lite/
 └── run.py                 # Application entry point
 
 ```
+
+## Teammate Area Ownership
+The project uses area-based ownership. Each teammate is responsible for a specific subsystem.
+
+### Teammate 1 - Video & Feed (Backend)
+
+**Areas:**
+- area: video
+- area: social (likes, comments, subscriptions)
+
+**Responsibilities:**
+- Video upload, edit, delete
+- Video feed and video detail logic
+- View counter logic
+- Social interactions (likes, comments, subscriptions)
+
+**Primary Code Areas:**
+- src/app/routes/video/
+- src/app/services/video/
+- src/app/routes/social/
+- src/app/services/social/
+- src/app/models/video.py
+
+### Teammate 2 - Authentication & Roles
+
+**Areas:**
+- area: auth
+
+**Responsibilities:**
+- User registration, login, logout
+- Password hashing
+- Role-based access control (Admin, Creator, Viewer)
+- Route protection and permission checks
+
+**Primary Code Areas:**
+- src/app/routes/auth/
+- src/app/services/auth/
+- src/app/utils/rbac.py
+- src/app/models/user.py
+
+### Teammate 3 - Database & Persistence
+
+**Areas:**
+- area: db
+
+**Responsibilities:**
+- Database schema design
+- ORM models and relationships
+- Migrations
+- Seed data and test scripts
+
+**Primary Code Areas:**
+- src/app/models/
+- src/migrations/
+- scripts/
+
+### Teammate 4 - Frontend / UI
+
+**Areas:**
+- area: ui
+
+**Responsibilities:**
+- Page layout and navigation
+- Viewer pages and creator dashboard
+- Admin UI pages
+- Styling and responsive design
+
+**Primary Code Areas:**
+- src/app/templates/
+- src/app/static/
+
+### Teammate 5 - QA, Integration & Admin Tools
+
+**Areas:**
+- area: admin
+- area: testing
+
+**Responsibilities:**
+- Admin dashboard and moderation tools
+- Integration testing
+- Bug fixing and regression testing
+- Demo preparation and final presentation support
+- In charge of supervising all integration from the developer (dev) branch into the main branch.
+
+**Primary Code Areas:**
+- src/app/routes/admin/
+- src/app/services/admin/
+- tests/
