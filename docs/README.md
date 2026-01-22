@@ -215,7 +215,7 @@ The project uses area-based ownership. Each teammate is responsible for a specif
 - src/app/templates/
 - src/app/static/
 
-### Teammate 5 - QA, Integration & Admin Tools
+### Timothy - QA, Integration & Admin Tools
 
 **Areas:**
 - area: admin
